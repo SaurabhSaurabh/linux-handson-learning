@@ -1,0 +1,9 @@
+Filesystem           Size  Used Avail Use% Mounted on
+/dev/mapper/cs-root   17G  1.7G   16G  10% /
+devtmpfs             1.1G     0  1.1G   0% /dev
+tmpfs                1.1G     0  1.1G   0% /dev/shm
+tmpfs                419M  5.8M  414M   2% /run
+tmpfs                1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+/dev/sda2            960M  234M  727M  25% /boot
+tmpfs                1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs                210M  4.0K  210M   1% /run/user/0

@@ -1,0 +1,10 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         798  0.0  1.9 130864 41920 ?        Ssl  06:48   0:00 /usr/bin/python3 -sP /usr/sbin/firewalld --nofork --nopid
+root           1  0.0  1.9  49176 41060 ?        Ss   06:48   0:05 /usr/lib/systemd/systemd --switched-root --system --deserialize=49
+root         854  0.0  0.8 330144 17520 ?        Ssl  06:48   0:00 /usr/sbin/NetworkManager --no-daemon
+root        1364  0.0  0.6  22244 13340 ?        Ss   06:49   0:00 /usr/lib/systemd/systemd --user
+root         679  0.0  0.5  35124 11356 ?        Ss   06:48   0:00 /usr/lib/systemd/systemd-udevd
+root        1408  0.0  0.5  15528 10836 ?        Ss   06:50   0:00 sshd-session: root [priv]
+root         799  0.0  0.4  18916  9864 ?        Ss   06:48   0:00 /usr/lib/systemd/systemd-logind
+root         633  0.0  0.3  21564  8344 ?        Ss   06:48   0:00 /usr/lib/systemd/systemd-journald
+root        1416  0.0  0.3  15544  7844 ?        S    06:50   0:05 sshd-session: root@pts/0
