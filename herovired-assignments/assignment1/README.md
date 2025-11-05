@@ -76,8 +76,9 @@ To ensure a reliable environment, your monitoring setup should:
 - `sudo yum install sysstat -y`
 
 
-📸 Screenshot Placeholder:
-htop or nmon running in terminal
+📸 htop or nmon running in terminal
+![htop output](screenshots/htop.png)
+
 
 ---
 
@@ -150,3 +151,4 @@ system-monitoring/
 - ✅ Add a `system_report.md` summarizing findings
 - ✅ Use markdown tables and bullet points for clarity
 - ✅ Tag your repo with `#DevOps`, `#LinuxMonitoring`, `#SysAdmin`
+
