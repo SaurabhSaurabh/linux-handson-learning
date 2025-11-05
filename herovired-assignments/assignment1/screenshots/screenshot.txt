@@ -1,0 +1,24 @@
+✅ 1. Place the Screenshot in Your Repo
+Put your image (e.g., htop.png) inside a folder like screenshots/:
+your-repo/
+├── screenshots/
+│   └── htop.png
+├── README.md
+
+✅ 2. Embed the Screenshot in Markdown
+Use this syntax to display the image:
+![htop output](screenshots/htop.png)
+
+
+You can also add a heading or description:
+### 📸 htop Output
+![htop output](screenshots/htop.png)
+
+
+
+✅ 3. Link to the Image (Optional)
+If you want to link to the image instead of displaying it:
+[View htop screenshot](screenshots/htop.png)
+
+
+
