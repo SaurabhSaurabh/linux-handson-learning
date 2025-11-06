@@ -83,20 +83,22 @@ To ensure a reliable environment, your monitoring setup should:
 ---
 
 ### 📊 B. Monitored CPU, Memory, and Processes
-- `htop` 
+- `nmon` 
 - `ps aux --sort=-%mem | head` 
 - `ps aux --sort=-%cpu | head` 
 
 
-📸 Screenshot Placeholder:
-Top resource-consuming processes
+📸 nmon 
+![nmon output](screenshots/nmon.png)
+![nmon output](screenshots/nmon_cpu_memory_process.png)
+
 
 ### 💽 C. Tracked Disk Usage
 - `df -h`
 - `du -sh /var/log/*`
-
-📸 Screenshot Placeholder:
-Output of df and du for key directories
+📸 df and du report
+![df output](screenshots/df_report.png)
+![du output](screenshots/du_report.png)
 
 ### 🧾 D. Enabled Logging
 - `journalctl -xe`
@@ -104,8 +106,8 @@ Output of df and du for key directories
 - `sar -u 1 3`
 - `sar -r 1 3`
 
-📸 Screenshot Placeholder:
-journalctl and sar output
+📸 sar output
+![sar output](screenshots/sar_cpu_usage.png)
 
 ### 📝 E. Created Basic Report
 Saved outputs to log files:
@@ -116,12 +118,7 @@ logs/
 ├── top_memory.txt
 ```
 
-📸 Screenshot Placeholder:
-Log file contents or terminal output
-
 ---
-
-
 
 ### 📘 Learnings
 - Real-time vs historical monitoring
@@ -143,12 +140,33 @@ system-monitoring/
 ├── README.md
 ```
 
----
 
 ### 5️⃣ Bonus
 
 - ✅ Included a shell script (`resourcemonitor.sh`) to automate the setup
-- ✅ Add a `system_report.md` summarizing findings
-- ✅ Use markdown tables and bullet points for clarity
-- ✅ Tag your repo with `#DevOps`, `#LinuxMonitoring`, `#SysAdmin`
+- ✅ Used markdown tables and bullet points for clarity
+
+
+---
+
+
+### 📊 Monitoring Tools Comparison
+
+| Tool      | CPU Usage | Memory Usage | Process Info | Disk Usage | Logging Support | Interactive |
+|-----------|-----------|--------------|--------------|------------|------------------|-------------|
+| `htop`    | ✅        | ✅           | ✅           | ❌         | ❌ (interactive only) | ✅         |
+| `nmon`    | ✅        | ✅           | ✅           | ✅         | ✅ (`.nmon` file)     | ✅         |
+| `df`      | ❌        | ❌           | ❌           | ✅         | ✅ (plain text)       | ❌         |
+| `du`      | ❌        | ❌           | ❌           | ✅ (directory-level) | ✅       | ❌         |
+| `sysstat` (`sar`) | ✅ | ✅       | ❌           | ❌         | ✅ (plain text)       | ❌         |
+
+
+
+✅ Which Is Better for Your Assignment?
+- Use df and du for disk usage — simple and assignment-compliant.
+- Use nmon for full system metrics with logging — best all-in-one tool.
+- Use sysstat (sar) if you want plain-text logs for CPU/memory — good for scripting and automation.
+- Avoid htop for logging — it's interactive only.
+
+
 
