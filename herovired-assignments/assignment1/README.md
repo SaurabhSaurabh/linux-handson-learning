@@ -92,6 +92,10 @@ To ensure a reliable environment, your monitoring setup should:
 ![nmon output](screenshots/nmon.png)
 ![nmon output](screenshots/nmon_cpu_memory_process.png)
 
+📸 ps 
+![ps output](screenshots/ps_cpu_usage.png)
+![ps output](screenshots/ps_memory_usage.png)
+
 
 ### 💽 C. Tracked Disk Usage
 - `df -h`
@@ -167,6 +171,7 @@ system-monitoring/
 - Use nmon for full system metrics with logging — best all-in-one tool.
 - Use sysstat (sar) if you want plain-text logs for CPU/memory — good for scripting and automation.
 - Avoid htop for logging — it's interactive only.
+
 
 
 
